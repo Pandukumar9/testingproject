@@ -1,1 +1,22 @@
-<button type="button" class="btn btn-primary">click here</button>
+<!-- <button type="button" (click)="setToolbaarDialog()" class="btn btn-primary">click here</button> -->
+
+<!-- <ul *ngFor="let x of userlist">
+  <li>{{ x }}</li>
+  <input type="text" [value]="userlist" />
+</ul>
+
+<input type="text" [value]="userlist" /> -->
+
+<!-- <div style="background-color: orange; color:white;padding: 20px;">
+  <p>Parent Component: </p>
+  <h1>{{name}}</h1>
+  <h1>{{backName}}</h1>
+  <div style="background-color: blue; color:white;padding: 20px;">
+    <app-child [firstName]="name" (myEvent)="callFunction($event)"></app-child>
+  </div>
+</div> -->
+
+
+<app-child (childmsg)="fromchild($event)" [fromparent]="parentmsg"></app-child>
+
+

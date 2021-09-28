@@ -1,0 +1,24 @@
+<!-- <p>child works!</p>
+
+<p>Child Component</p>
+<h1>Hello {{firstName}}!</h1>
+<button (click)="sendBack()">Send Back</button> -->
+
+<button type="button" (click)="callmethod()">Call method in child</button>
+
+
+<h3>{{fromparent}}</h3>
+
+
+<table class="table">
+  <tbody>
+    <tr>
+      <th>
+        Color
+      </th>
+    </tr>
+    <tr *ngFor="let item of arraydata">
+      <td>{{item.color}}</td>
+    </tr>
+  </tbody>
+</table>
